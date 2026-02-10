@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{hyperref}
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Mazharul Islam Leon} % Your name
+\address{Dhaka, Bangladesh} 
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+880)1911687821 \\ mzleon.cse@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf United International University, Dhaka} \hfill {\em Oct 2015 - Oct 2020} 
+\\  B.Sc. in Computer Science and Engineering \hfill {CGPA: 3.03}
+%Department of Chemical Engineering  
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Career Objective
+%-----------------------------------------------
+
+
+% \begin{rSection}{Career Objective}
+%  To work for an organization which provides me the opportunity to improve my research skills and knowledge to grow along with the organization objective.
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+{\small
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} p{0.62\textwidth} }
+Languages & Python (Advanced), C++, Java, SQL, Bash Scripting \\
+Generative AI \& LLMs & LangChain, LangGraph, Google ADK, RAG Pipelines, Autonomous Agents, LLM Fine-tuning (LoRA, QLoRA, PEFT), LLM Evaluation (BLEU, ROUGE), Hugging Face \\
+Deep Learning \& CV & PyTorch, TensorFlow, CNNs, Vision Transformers (ViT), Object Detection (YOLO v12), OpenCV \\
+ML System Design & Microservices Architecture, Scalable Systems, RESTful APIs, Real-time Inference, Event-Driven Architecture \\
+MLOps \& Cloud & AWS (SageMaker), Docker, Github Actions, CI/CD, MLflow, Airflow, Model Deployment \& Monitoring \\
+Data \& Storage & PostgreSQL, MySQL, Vector Databases (Chroma, Qdrant), Data Pipelines (ETL) \\
+Edge AI & NVIDIA Jetson, DeepStream, TensorRT, Edge Computing \\
+\end{tabular}
+}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+\begin{rSubsection}{RedDot Digital Ltd. - a subsidiary of Robi Axiata Limited}{August 2021 - January 2026}{Senior Software Engineer (Team: IoT \& ML)}{Full-time}
+
+\item Architected and deployed a computer vision pipeline for automated tobacco leaf grading, integrating image classification, segmentation, and MLflow tracking — boosted grading accuracy by 25\% and reduced manual processing time by 3x.
+\item Designed and implemented a hybrid YOLO + ML model for real-time video anomaly detection on NVIDIA Jetson edge devices — achieving \textless 50ms inference latency at 30 FPS in production environments.
+\item Delivered a high-throughput facial recognition system achieving 50+ TPS on CPU with 99.2\% verification accuracy, serving 30M+ telecom users with secure biometric verification at national scale.
+\item Built and optimized multiple LLM-powered chatbot systems using LangChain, Google ADK, and vector DBs (Chroma, Qdrant) — reduced customer support response time by 60\% and handled 10K+ daily queries autonomously.
+\item Engineered real-time defect detection for manufacturing using classical CV + YOLO models — improved detection precision to 96.5\%, reducing product wastage by 30\%.
+\item Designed and deployed an OCR + face matching eKYC platform supporting 20M+ fintech users — reduced onboarding time from 48 hours to under 5 minutes while maintaining regulatory compliance.
+\item Spearheaded 5+ Proof of Concept (PoC) projects, successfully transitioning 3 into revenue-generating products, demonstrating strong project management and business acumen.
+
+ 
+
+\end{rSubsection}
+
+
+\begin{rSubsection}{CMED Health Ltd., Bangladesh}{Sep 2020 - July 2021}{Jr. Data Science Engineer}{Full-time}
+ \item Designed and implemented data extraction pipelines from SQL dump files.
+ \item Performed data cleaning and preprocessing to prepare datasets for analysis.
+ \item Applied advanced data analysis techniques to derive actionable insights.
+ \item Collaborated with stakeholders and cross-functional teams to share data-driven insights.
+ \item Actively participated in writing research papers based on the processed datasets.
+ \end{rSubsection}
+
+
+\end{rSection}
+
+\newpage
+
+%	Projects
+%----------------------------------------------
+
+\begin{rSection}{Projects}
+{\bf AI-Powered Biometric Verification System – Robi Axiata PLC}
+\\ Developed an AI-driven biometric verification system with face recognition and camera-based fingerprint matching for SIM registration. Expected to be used by 30 million users with 50+ TPS rate.
+
+{\bf AI Based RedDot eKYC for Telecash} 
+\\ Developed an AI-powered eKYC system for Telecash, Southeast Bank PLC's mobile banking app, featuring face identification, face matching, and OCR-based NID extraction. Expected to onboard 20 million users.
+
+% {\bf Facemask detection using deep learning model}
+% \\While doing Machine Learning course I developed this project.This application can detect face-masks using a web camera. The deep learning model was trained using the Fastai libraries with the ResNet-50 model. The dataset is scraped from the internet and for deployment, it uses OpenCV
+% libraries.[GitHub: \url{https://github.com/princexoleo/face-mask-detector}]
+
+\end{rSection}
+
+
+
+
+
+%	Achievements
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Achievements}
+\begin{rSubsection}{}{}{}{}
+\item Received the prestigious Star Developer Award for  Q1-2022 \& Q3-2023 at RedDot Digital Ltd.
+\item Achieved the runner-up position in the SDG Hackathon 2.0 organized by Banglalink.
+\item Received academic scholarships ranging from 25\% to 50\% for multiple trimesters.
+ 
+ \end{rSubsection}
+ \end{rSection}
+
+
+ \begin{rSection}{Extra Activities}
+ \begin{rSubsection}{}{}{}{}
+\item Instructor for the ``Build with AI'' event organized by the Google Developer Group (GDG) at UIU.
+\item Instructor for the ``Intro to Computer Vision'' event organized by the Quantum AI.
+\item Vice President, UIU App Forum, from Jan 2020 to Sep 2020.
+\item Member, Competitive Programming (CP), at UIU
+\end{rSubsection}
+ \end{rSection}
+
+
+
+%--------------------------------------------------
+%--------------------Research-----------------
+%-------------------------------------------------
+
+
+\begin{rSection}{Research Profile}
+\item Publication [1]: {\bf Mazharul Islam Leon}, Md Ifraham Iqbal, Sayed Mehedi Azim, and Khondaker A.
+Mamun ``Predicting COVID-19 infections and deaths in Bangladesh using Machine \\ Learning Algorithms''- ICICT4SD 2021 - IEEE-Xplore. (Status: Published)
+
+\item Publication [2]: Afnan Islam, Thajid Ibna Rouf Uday, Nazib Ahmad, Md Toriqul Islam, Amit
+Ghosh, Sadia Kamal, Tanzir Ahommed, {\bf Mazharul Islam Leon}, Ehsan Ahmed
+Dhrubo, ``EduBot: An Educational Robot for Underprivileged Children''- ICACTM 2019 - IEEE-Xplore. (Status: Published)
+
+\item Publication [3]: {\bf Mazharul Islam Leon}, Md Ifraham Iqbal, Sadaf Meem, Furkhan Alahi, Morshed
+Ahmed, and Md. Saddam Hossain Mukta ``Dengue Outbreak
+Prediction from the Weather Spatio-temporal data using Deep Learning''
+-ICBBDB 2021, Springer. (Status: Published)
+
+
+\item Publication [4]: Md Ifraham Iqbal, {\bf Mazharul Islam Leon}, Jahidul Islam Rahat, Nilamber Haider
+Tonmoy, and Amit Ghosh ``Deep Learning Based Smart Parking Management
+System For Metropolitan City'' - Tensymp 2021 - IEEE-Xplore. (Status: Published)
+
+\item Publication [5]: Khondaker A. Mamun, Moinul H. Chowdhury, Rubaiyat Alam Hridhe, Tanvir Islam,
+{\bf Mazharul Islam Leon}, Mithila Faruque, Mohammad Badruddozza Mia, Md Jasim
+Uddin and Farhana Sarker ``Implementation of a Digital Healthcare Service
+Model for Ensuring Preventive and Primary Healthcare in Rural Bangladesh'' - IC4IR 2021, Springer. (Status: Published)
+
+\item Publication [6]: Syed Ahmed, 
+{\bf Mazharul Islam Leon}, Sanchita Pal, M. Rubaiyat Hossain Mondal ``Hybrid CNN-LSTM Transfer Learning for Dengue Diagnosis from Raman Spectroscopy Images'' - ICTP 2023, IEEE Xplore. (Status: Published)
+
+\end{rSection}
+
+%--------------------------------------------------
+%------------------Extra----------------------
+%---------------------------------------------
+\newpage
+ 
+ 
+% \begin{rSection}{Extra-Cirrucular} 
+% \begin{rSubsection}{}{}{}{}
+% \item Vice President, UIU APP FORUM (2020-2021)
+% \item Executive Member of the  UIU Robotics Club since 2017.
+% \item Member of the  UIU Computer Club since 2017.
+% \item Participate in a competitive programming contest (CP) and session at UIU.
+% \item Take a workshop on Programming Language C hosted by the UIU App Forum.
+% \item Take a workshop on Arduino hosted by the UIU Robotics Club.
+% \item Take a workshop on Machine Learning \& Computer Vision organised by the Quantum AI.
+%  \end{rSubsection}
+
+% \end{rSection}
+
+% %---------------------------------------------
+% %--------------------Reference-----------
+% %--------------------------------------------------
+
+
+
+% %----------------------------------------------------------------------------------------
+% \begin{rSection}{References}
+% \vspace{0.3cm}
+% \itab{\textbf{Prof. Dr. Dewan Md. Farid}} \tab{}  \tab{\textbf{Dr. Swakkhar Shatabda}}
+% \\ \itab{Professor of Computer Science } \tab{}  
+% \tab{Professor \& Director - IQAC}
+% \\ \itab{United International University} \tab{}  \tab{United International University} 
+% \\ \itab{Email: dewanfarid@cse.uiu.ac.bd} \tab{}  
+% \tab{Email: swakkhar@cse.uiu.ac.bd} 
+% \\ 
+% \\ 
+% \itab{\textbf{Md. Mofijul Islam}} \tab{}  
+% \tab{\textbf{}}
+% \\ \itab{PhD Student at Link Lab } \tab{}  
+% \tab{}
+% \\ \itab{University of Virginia} \tab{}  \tab{} 
+% \\ \itab{Email: mi8uu@virginia.edu} \tab{}  
+% \tab{}
+% \\ 
+% \itab{Websites: https://mmiakashs.github.io}
+% % \\ \itab{Process Control (ongoing)} \tab{} \tab{Electrodynamics}
+
+% \end{rSection}
+
+
+
+\end{document}

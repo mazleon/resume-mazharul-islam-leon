@@ -50,7 +50,8 @@ This will generate `resume.pdf` in the current directory.
 
 - **Email**: mzleon.cse@gmail.com
 - **Location**: Dhaka, Bangladesh
-- **Phone**: (+880) 1911687821
+- **Phone**: (+880) 1911687821 )
+- **Website**: https://mazleon.com
 
 ## 📝 License
 

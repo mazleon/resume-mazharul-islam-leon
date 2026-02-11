@@ -23,3 +23,6 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+
+# Specific resume.pdf file
+resume.pdf

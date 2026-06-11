@@ -1,0 +1,147 @@
+\documentclass[10pt,a4paper]{article}
+
+% ---------- packages ----------
+\usepackage[margin=0.55in]{geometry}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[default]{opensans}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+% ---------- colors ----------
+\definecolor{headerblue}{HTML}{1a237e}
+\definecolor{sectioncolor}{HTML}{1a237e}
+\definecolor{rulesep}{HTML}{1a237e}
+
+% ---------- header formatting ----------
+\newcommand{\name}[1]{{\centering\LARGE\textbf{\textcolor{headerblue}{#1}}\par}}
+\newcommand{\tagline}[1]{{\centering\normalsize\textbf{\color{black!80}#1}\par}}
+\newcommand{\contact}[1]{{\centering\small\color{black!70}#1\par}}
+
+% ---------- section formatting ----------
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{sectioncolor}}
+  {}{0em}{}[\color{rulesep}\rule{\textwidth}{0.8pt}]
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+
+\setlist[itemize]{leftmargin=1.2em, nosep, label=\textbullet}
+\setlist[enumerate]{leftmargin=1.5em, nosep}
+\setlength{\parskip}{0.35em}
+\emergencystretch=1.5em
+
+\begin{document}
+
+% ======== HEADER ========
+\name{Mazharul Islam Leon}
+\vspace{0.2em}
+\tagline{Senior AI Engineer \,$\cdot$\, Generative AI \& Computer Vision Architect}
+
+\contact{%
+  Dhaka, Bangladesh \hspace{0.3em}$\cdot$\hspace{0.3em} (+880) 1911687821 \hspace{0.3em}$\cdot$\hspace{0.3em}
+  \href{mailto:mzleon.cse@gmail.com}{mzleon.cse@gmail.com} \hspace{0.3em}$\cdot$\hspace{0.3em}
+  \href{https://mazleon.com}{mazleon.com}
+}
+
+\vspace{0.4em}
+
+% ======== PROFESSIONAL SUMMARY ========
+\section{Professional Summary}
+Senior AI Engineer and solutions architect with \textbf{5+ years} designing and scaling production-grade \textbf{Computer Vision} and \textbf{Generative AI} systems serving \textbf{30M+ users} at national scale. Proven end-to-end ownership: real-time biometric verification at \textbf{50+ TPS} with 99.2\% accuracy, \textbf{sub-50ms} edge inference, and autonomous \textbf{LLM agents} handling \textbf{10K+ daily queries}. Deep expertise in \textbf{agentic AI architecture} (LangChain, LangGraph, RAG, multi-agent systems), \textbf{MLOps}, and \textbf{edge AI}, with a record of converting PoCs into revenue-generating products.
+
+% ======== TECHNICAL SKILLS ========
+\section{Technical Skills}
+
+\setlength{\tabcolsep}{6pt}
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X@{}}
+\textbf{Languages}              & Python (Expert), C++, Java, SQL, Bash \\
+\textbf{Generative AI \& Agents}& LangChain, LangGraph, Google ADK, Agentic RAG, Multi-Agent Orchestration, Prompt Engineering, Guardrails, LLM Fine-tuning (LoRA, QLoRA, PEFT), Hugging Face \\
+\textbf{LLM Evaluation}         & RAGAS (Faithfulness, Answer Relevancy, Context Precision), LLM-as-a-Judge, BLEU, ROUGE \\
+\textbf{Deep Learning \& CV}    & PyTorch, TensorFlow, CNNs, Vision Transformers (ViT), Object Detection (YOLO), Image Segmentation, OCR, Face Recognition, OpenCV \\
+\textbf{AI System Architecture} & ML System Design, Microservices, Event-Driven Architecture, RESTful APIs, Real-Time Inference, High-Throughput \& Low-Latency Systems \\
+\textbf{MLOps \& Cloud}         & AWS (SageMaker), Docker, CI/CD (GitHub Actions), MLflow, Airflow, Model Deployment, Monitoring \& Observability \\
+\textbf{Data \& Storage}        & PostgreSQL, MySQL, Vector Databases (Chroma, Qdrant), ETL / Data Pipelines \\
+\textbf{Edge AI}                & NVIDIA Jetson, DeepStream, TensorRT, Model Optimization \& Quantization \\
+\end{tabularx}
+\normalsize
+
+% ======== WORK EXPERIENCE ========
+\section{Professional Experience}
+
+\vspace{0.25em}
+\noindent\textbf{Agripulse.ai}\hfill\textbf{Oct 2025 -- Jun 2026}\par
+\textit{Senior AI Engineer}\hfill\textit{Contract}\par
+\vspace{0.2em}
+\begin{itemize}
+  \item Designed and deployed an \textbf{agentic AI advisory chatbot} for farmers in Bangladesh on a LangChain orchestration core, delivering real-time agricultural guidance in Bengali across \textbf{10K+ daily queries}.
+  \item Architected a \textbf{multi-agent system} with specialized sub-agents for crop disease diagnosis, weather forecasting, market price analysis, and fertilizer recommendation, enabling modular, extensible service composition.
+  \item Implemented \textbf{agentic RAG pipelines} fusing structured agricultural databases with unstructured knowledge bases (FAO guidelines, local research) for context-aware, citation-grounded responses.
+  \item Built an automated \textbf{LLM evaluation pipeline} using RAGAS metrics and LLM-as-a-Judge for continuous quality assurance, achieving \textbf{94\% response accuracy}.
+  \item Hardened prompts with few-shot examples, dynamic context injection, and \textbf{guardrails} to mitigate hallucinations in low-resource language settings.
+\end{itemize}
+
+\noindent\textbf{RedDot Digital Ltd. -- a subsidiary of Robi Axiata Limited}\hfill\textbf{Aug 2021 -- Jan 2026}\par
+\textit{Senior Software Engineer, IoT \& Machine Learning}\hfill\textit{Full-time}\par
+\vspace{0.2em}
+\begin{itemize}
+  \item Architected a national-scale \textbf{AI biometric verification platform} (face recognition + camera-based fingerprint matching) serving \textbf{30M+ telecom subscribers}, sustaining \textbf{50+ TPS on CPU-only infrastructure} with \textbf{99.2\% verification accuracy}.
+  \item Designed and deployed an \textbf{OCR + face-matching eKYC platform} for \textbf{20M+ fintech users}, cutting customer onboarding from \textbf{48 hours to under 5 minutes} while maintaining full regulatory compliance.
+  \item Built a real-time \textbf{video anomaly detection} system (hybrid YOLO + ML) on NVIDIA Jetson edge devices with DeepStream and TensorRT, achieving \textbf{sub-50ms inference at 30 FPS} in production environments.
+  \item Engineered an end-to-end \textbf{computer vision pipeline} for automated tobacco leaf grading (classification + segmentation with MLflow experiment tracking), improving grading accuracy by \textbf{25\%} and reducing manual processing time \textbf{3$\times$}.
+  \item Developed and optimized \textbf{LLM-powered chatbot systems} using LangChain, Google ADK, and vector databases (Chroma, Qdrant), autonomously handling \textbf{10K+ daily queries} and reducing support response time by \textbf{60\%}.
+  \item Spearheaded \textbf{5+ PoC initiatives}, owning solution architecture from requirements to production rollout and converting \textbf{3 into revenue-generating products}.
+\end{itemize}
+
+
+
+\newpage
+\noindent\textbf{CMED Health Ltd., Bangladesh}\hfill\textbf{Sep 2020 -- Jul 2021}\par
+\textit{Junior Data Science Engineer}\hfill\textit{Full-time}\par
+\vspace{0.2em}
+\begin{itemize}
+  \item Built data extraction and \textbf{ETL pipelines} from large-scale SQL dumps powering analytics and ML use cases.
+  \item Performed data preprocessing and exploratory analysis supporting digital-health research and business insights.
+  \item Collaborated with cross-functional teams to translate analytical findings into actionable product decisions.
+\end{itemize}
+
+% ======== PROJECTS ========
+\section{Selected Projects}
+
+\noindent\textbf{AI-Powered Biometric Verification System} --- Robi Axiata PLC\par
+End-to-end biometric verification with face recognition and camera-based fingerprint matching for nationwide SIM registration --- engineered for \textbf{30M users} at \textbf{50+ TPS}.
+
+\vspace{0.25em}
+\noindent\textbf{RedDot eKYC Platform} --- Telecash, Southeast Bank PLC\par
+AI-powered eKYC for mobile banking featuring face identification, face matching, and OCR-based NID extraction --- built to onboard \textbf{20M users} with regulatory-grade accuracy.
+
+% ======== PUBLICATIONS ========
+\section{Publications}
+\small
+\begin{enumerate}
+  \item \textbf{M. I. Leon}, M. I. Iqbal, S. M. Azim, K. A. Mamun. ``Predicting COVID-19 Infections and Deaths in Bangladesh using Machine Learning Algorithms.'' \textit{ICICT4SD 2021}, IEEE Xplore.
+  \item \textbf{M. I. Leon}, M. I. Iqbal, S. Meem, F. Alahi, M. Ahmed, M. S. H. Mukta. ``Dengue Outbreak Prediction from Weather Spatiotemporal Data using Deep Learning.'' \textit{ICBBDB 2021}, Springer.
+  \item S. Ahmed, \textbf{M. I. Leon}, S. Pal, M. R. H. Mondal. ``Hybrid CNN-LSTM Transfer Learning for Dengue Diagnosis from Raman Spectroscopy Images.'' \textit{ICTP 2023}, IEEE Xplore.
+  \item M. I. Iqbal, \textbf{M. I. Leon}, J. I. Rahat, N. H. Tonmoy, A. Ghosh. ``Deep Learning Based Smart Parking Management System for Metropolitan City.'' \textit{TENSYMP 2021}, IEEE Xplore.
+  \item K. A. Mamun et al. (incl. \textbf{M. I. Leon}). ``Implementation of a Digital Healthcare Service Model for Preventive and Primary Healthcare in Rural Bangladesh.'' \textit{IC4IR 2021}, Springer.
+  \item A. Islam et al. (incl. \textbf{M. I. Leon}). ``EduBot: An Educational Robot for Underprivileged Children.'' \textit{ICACTM 2019}, IEEE Xplore.
+\end{enumerate}
+\normalsize
+
+% ======== EDUCATION ========
+\section{Education}
+\textbf{United International University}, Dhaka \hfill Oct 2015 -- Oct 2020\par
+B.Sc.\ in Computer Science and Engineering --- merit-based scholarships across multiple trimesters
+
+% ======== AWARDS & LEADERSHIP ========
+\section{Awards \& Leadership}
+\begin{itemize}
+  \item \textbf{Star Developer Award} (Q1-2022 \& Q3-2023), RedDot Digital Ltd.\ --- top engineering recognition.
+  \item \textbf{Runner-up}, SDG Hackathon 2.0, organized by Banglalink.
+  \item Instructor, ``Build with AI'' --- Google Developer Group (GDG) at UIU; Instructor, ``Intro to Computer Vision'' --- Quantum AI.
+  \item Vice President, UIU App Forum (Jan 2020 -- Sep 2020); Member, Competitive Programming Club, UIU.
+\end{itemize}
+
+\end{document}

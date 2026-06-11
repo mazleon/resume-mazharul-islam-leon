@@ -1,0 +1,22 @@
+# --- AI / Agent config ---
+CLAUDE.md
+.claude/
+
+# --- LaTeX auxiliaries ---
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.synctex.gz
+*.synctex
+*.fdb_latexmk
+*.fls
+*.xdv
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
